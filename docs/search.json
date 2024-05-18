@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "st_558_hw1.html",
+    "href": "st_558_hw1.html",
+    "title": "ST558 HW1: My thoughts on Data Science and Statistics",
+    "section": "",
+    "text": "Hi! My name’s Chris Aguilar. I’m a student in the NCSU Masters’ Statistics Program. This is my first homework assignment submission for the course ST 558, Data Science for Statisticians.\nFor this assignment, I’ll be covering the following:\n\nWhat I think being a data scientist is about;\nThe differences/similarities I see between statisticians and data scientists, and;\nHow I view myself in relation to these two areas.\n\nFor grading purposes, note my use of a list above. 😁\nNow, on to the questions."
+  },
+  {
+    "objectID": "st_558_hw1.html#introduction",
+    "href": "st_558_hw1.html#introduction",
+    "title": "ST558 HW1: My thoughts on Data Science and Statistics",
+    "section": "",
+    "text": "Hi! My name’s Chris Aguilar. I’m a student in the NCSU Masters’ Statistics Program. This is my first homework assignment submission for the course ST 558, Data Science for Statisticians.\nFor this assignment, I’ll be covering the following:\n\nWhat I think being a data scientist is about;\nThe differences/similarities I see between statisticians and data scientists, and;\nHow I view myself in relation to these two areas.\n\nFor grading purposes, note my use of a list above. 😁\nNow, on to the questions."
+  },
+  {
+    "objectID": "st_558_hw1.html#my-thoughts-on-data-scientists-and-statisticians",
+    "href": "st_558_hw1.html#my-thoughts-on-data-scientists-and-statisticians",
+    "title": "ST558 HW1: My thoughts on Data Science and Statistics",
+    "section": "My thoughts on data scientists and statisticians",
+    "text": "My thoughts on data scientists and statisticians\n\nWhat being a data scientist is about\nI believe that being a data scientist is about solving problems when the main ingredient we have to work with is data about occurrences we are interested in. There may exist different titles and tools at our disposal depending on the field we end up working in, but the goal is always to solve problems using data to guide our solutions.\n\n\nSimilarities and differences between statisticians and data scientists\nStatisticians and data scientists both want to solve problems given data. There is a lot of overlap in the knowledge, skills, and abilities of statisticians and data scientists. But I believe the differences are mostly a matter of emphasis on the tools used and skills leveraged, as well as the way a statistician may approach solving a problem vs. a data scientist.\nFor example, a statistician may field a problem, end up with a hypothesis to test, and fit some models on the data to write a report about the findings, then present to stakeholders and make recommendations on actions to take based on the findings. The data may be very large, or could be just a small sample of a large amount of data.\nA data scientist may field a problem, explore the data to try and find some patterns that may point toward something actionable, and develop some models attempting to find the best predictive model possible. Once that’s done, a model may be developed and put into production, where the consumable output is the model predictions on unseen data. These predictions are used to help the organization act in a certain way to solve a problem. The data they focus on is likely to be massive, as “more is better” seems to be the motto for data scientists.\n\n\nHow I view myself in relation to these two areas\nMy career path had me starting as more of a data scientist at a large organization. The business problems we’ve tried to solve have been more amenable to solutions that, in hindsight, a statistician may have provided easily without the need to put any models into production. However, stakeholders fixate on things like “predictive modeling” and anchor themselves to the belief that some problems can only be solved through a model’s predictions. This may be true in some cases, but I believe it is not true in most cases at my organization. From self-study, I’ve come to gravitate to solutions more common in the statistician’s world. As a result, I decided to continue my education to fill in gaps in my skills. Here I am as a result!\nAnyway, on to some code."
+  },
+  {
+    "objectID": "st_558_hw1.html#code-section",
+    "href": "st_558_hw1.html#code-section",
+    "title": "ST558 HW1: My thoughts on Data Science and Statistics",
+    "section": "Code Section",
+    "text": "Code Section\nHere’s some code to talk about. First, assigning the Sepal.Length variable from the iris dataset to a variable y.\n\ny &lt;- density(iris$Sepal.Length)\n\nNow we inspect different aspects of this variable. Namely, we’ll look at the class, type, and structure of y.\n\n# class\nclass(y)\n\n[1] \"density\"\n\n# structure\nstr(y)\n\nList of 8\n $ x         : num [1:512] 3.48 3.49 3.5 3.51 3.52 ...\n $ y         : num [1:512] 0.00023 0.000259 0.000293 0.000329 0.00037 ...\n $ bw        : num 0.274\n $ n         : int 150\n $ old.coords: logi FALSE\n $ call      : language density.default(x = iris$Sepal.Length)\n $ data.name : chr \"iris$Sepal.Length\"\n $ has.na    : logi FALSE\n - attr(*, \"class\")= chr \"density\"\n\n# type\ntypeof(y)\n\n[1] \"list\"\n\n\nLet’s look at a plot of the density of Sepal.Length, which is what we assigned to y. This will be done using plot(y) but we’ll hide the code for this call."
+  }
+]

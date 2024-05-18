@@ -1,0 +1,72 @@
+---
+title: "ST558 HW1: My thoughts on Data Science and Statistics"
+author: "Chris Aguilar"
+format: html
+editor: visual
+---
+
+## Introduction
+
+Hi! My name's Chris Aguilar. I'm a student in the NCSU Masters' Statistics Program. This is my first homework assignment submission for the course **ST 558, Data Science for Statisticians.**
+
+For this assignment, I'll be covering the following:
+
+-   What I think being a data scientist is about;
+-   The differences/similarities I see between statisticians and data scientists, and;
+-   How I view myself in relation to these two areas.
+
+For grading purposes, note my use of a list above. 😁
+
+Now, on to the questions.
+
+## My thoughts on data scientists and statisticians
+
+### What being a data scientist is about
+
+I believe that being a data scientist is about solving problems when the main ingredient we have to work with is data about occurrences we are interested in. There may exist different titles and tools at our disposal depending on the field we end up working in, but the goal is always to solve problems using data to guide our solutions.
+
+### Similarities and differences between statisticians and data scientists
+
+Statisticians and data scientists both want to solve problems given data. There is a lot of overlap in the knowledge, skills, and abilities of statisticians and data scientists. But I believe the differences are mostly a matter of emphasis on the tools used and skills leveraged, as well as the way a statistician may approach solving a problem vs. a data scientist.
+
+For example, a statistician may field a problem, end up with a hypothesis to test, and fit some models on the data to write a report about the findings, then present to stakeholders and make recommendations on actions to take based on the findings. The data may be very large, or could be just a small sample of a large amount of data.
+
+A data scientist may field a problem, explore the data to try and find some patterns that may point toward something actionable, and develop some models attempting to find the best predictive model possible. Once that's done, a model may be developed and put into production, where the consumable output is the model predictions on unseen data. These predictions are used to help the organization act in a certain way to solve a problem. The data they focus on is likely to be massive, as "more is better" seems to be the motto for data scientists.
+
+### How I view myself in relation to these two areas
+
+My career path had me starting as more of a data scientist at a large organization. The business problems we've tried to solve have been more amenable to solutions that, in hindsight, a statistician may have provided easily without the need to put any models into production. However, stakeholders fixate on things like "predictive modeling" and anchor themselves to the belief that some problems can only be solved through a model's predictions. This may be true in some cases, but I believe it is not true in most cases at my organization. From self-study, I've come to gravitate to solutions more common in the statistician's world. As a result, I decided to continue my education to fill in gaps in my skills. Here I am as a result!
+
+Anyway, on to some code.
+
+## Code Section
+
+Here's some code to talk about. First, assigning the `Sepal.Length` variable from the `iris` dataset to a variable `y`.
+
+```{r}
+y <- density(iris$Sepal.Length)
+
+```
+
+Now we inspect different aspects of this variable. Namely, we'll look at the class, type, and structure of `y`.
+
+```{r}
+
+# class
+class(y)
+
+# structure
+str(y)
+
+# type
+typeof(y)
+
+```
+
+Let's look at a plot of the density of `Sepal.Length`, which is what we assigned to `y`. This will be done using `plot(y)` but we'll hide the code for this call.
+
+```{r}
+#| echo: false
+
+plot(y)
+```
